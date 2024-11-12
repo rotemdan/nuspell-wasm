@@ -4,7 +4,7 @@
 
 Clone the EMSDK repository:
 ```
-git clone https://github.com/emscripten-core/emsdk
+git clone https://github.com/emscripten-core/emsdk --depth 1
 ```
 
 Install and activate EMSDK:

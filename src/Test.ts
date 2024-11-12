@@ -18,7 +18,6 @@ export async function testKorean() {
 	log(nuspell.testSpelling('우물거려'))
 	log(nuspell.testSpelling('우물된려'))
 	log(nuspell.getSpellingSuggestions('우물된려'))
-	log(nuspell.getSpellingSuggestions('우물된려'))
 
 	nuspell.dispose()
 }
@@ -32,6 +31,10 @@ export async function testSpeed() {
 		if (i % 1000 === 0) {
 			log(i)
 		}
+	}
+
+	for (let i = 0; i < 10; i++) {
+		log(nuspell.getSpellingSuggestions('우물된려'))
 	}
 
 	nuspell.dispose()

@@ -47,11 +47,11 @@ int Nuspell_getSpellingSuggestions(Nuspell* instance, const char* word, char*** 
 
 void Nuspell_freeSpellingSuggestions(char** suggestions, int count) {
 	for (size_t i = 0; i < count; i++) {
-		delete suggestions[i];
-		suggestions[i] = 0;
+		delete[] suggestions[i];
+		suggestions[i] = nullptr;
 	}
 
-	delete suggestions;
+	delete[] suggestions;
 }
 
 void Nuspell_destroy(Nuspell* instance) {

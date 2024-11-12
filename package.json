@@ -1,8 +1,20 @@
 {
 	"name": "nuspell-wasm",
-	"version": "0.1.0",
+	"version": "0.1.1",
 	"description": "WebAssembly port of the Nuspell spell-checking library.",
 	"author": "Rotem Dan",
+	"license": "LGPL-3.0",
+	"keywords": [
+		"Nuspell",
+		"spell checker"
+	],
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/rotemdan/nuspell-wasm"
+	},
+	"bugs": {
+		"url": "https://github.com/rotemdan/nuspell-wasm/issues"
+	},
 	"main": "./dist/Nuspell.js",
 	"type": "module",
 	"files": [
@@ -15,17 +27,9 @@
 		"COPYING.LESSER",
 		"tsconfig.json"
 	],
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/rotemdan/nuspell-wasm"
-	},
-	"bugs": {
-		"url": "https://github.com/rotemdan/nuspell-wasm/issues"
-	},
 	"scripts": {
 		"test": "node ./dist/Test.js"
 	},
-	"license": "LGPL-3.0",
 	"dependencies": {},
 	"devDependencies": {
 		"@types/node": "^22.8.5"
